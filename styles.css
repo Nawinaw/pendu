@@ -1,0 +1,195 @@
+/* styles géneraux */
+body{
+    background-color: #5966435f ;
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+/* styles pour le côté gauche */
+.partieGauche{
+    width: 30%;
+    float: left;
+    margin: 10px;
+}
+/* styles pour le côté centrale// le pendu*/
+.partieCentre{
+    width: 40%;
+    float: center;
+}
+.figure-contenant{
+        stroke: purple;
+        stroke-width: 7px;
+        stroke-linecap: round;
+        fill: transparent;
+}
+
+/* styles pour l'historique */
+.partieDroite{
+    width: 30%;
+    float: right;
+}
+.motAtrouver{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+.lettre{
+    border-bottom: 2px solid cadetblue;
+    display: inline-flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    height: 50px;
+    width: 20px;
+}
+.motTrouver{
+    background-color: rgba(245, 245, 220, 0.158);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: enter;
+    display: none;
+}
+/* .popup{
+margin-left: 50%;
+background-color: antiquewhite;
+border-radius: 15px;
+box-shadow:  0 15px 10px 3px (rgba(102, 51, 153, 0.14));    
+} */
+
+/* .popup button{
+    cursor: pointer;
+    background-color: azure;
+    column-rule:yellow ;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16 px; 
+    
+} */
+.notification{
+background-color: antiquewhite;
+border-radius:  15px 10px 0 0;
+position: absolute;
+bottom: -90;
+transition: transform 0.3 ease-in-out;
+
+}
+.notification{
+    transform: translateY();
+}
+
+.jeu-contenant{
+    padding: 20px 30px;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+    position: relative;
+}
+
+.figure-partie{
+    display: none;
+}
+
+.mauvaises-lettre-contenant{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.mauvaises-lettre-contenant p{
+    margin: 0 0 5px;
+}
+
+.mauvaises-lettre-contenant span{
+    font-size: 24px;
+}
+
+.mot{
+    display: flex;
+    position: absolute;
+    bottom: 10;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.lettre{
+    border-bottom: 3px solid #354935;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    height: 50px;
+    width: 20px;
+
+
+}
+
+.popup-contenant{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.popup button{
+    cursor: pointer;
+    background-color: azure;
+    column-rule: blue;
+    border: 0;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+
+.popup button:active{
+    transform: scale(0.98);
+}
+
+.popup button:focus{
+outline: 0;
+}
+
+
+.notification-contenant{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute; 
+    bottom: -80px;
+    transition: transform 0.3 ease-in-out;
+}
+
+.notification-contenant .afficher{
+    transform: translateY(-80px);
+}

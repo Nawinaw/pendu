@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENDU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Jeu du Pendu</h1>
+    <section>
+        <div class="partieGauche">
+            <button class="newGame"> Débuter une nouvelle partie </button> <br><br>
+        </div>
+
+        <div class="partieCentre">
+            <!-- Le pendu -->
+            <svg height="300" width="400" class="pendu">
+                <line x1="60" y1="230" x2="80" y2="230" class="tentative1" />
+                <line x1="60" y1="20" x2="60" y2="230" class="tentative2" />
+                <line x1="60" y1="20" x2="140" y2="20" class="tentative3" />
+                <line x1="140" y1="20" x2="140" y2="50" class="tentative4" />
+                <circle cx="140" cy="80" r="20" class="tentative"> </circle>
+                <line x1="140" y1="120" x2="140" y2="150" class="tentative" />
+                <line x1="140" y1="120" x2="120" y2="100" class="tentative" />
+                <line x1="140" y1="120" x2="160" y2="100" class="tentative" />
+                <line x1="140" y1="150" x2="120" y2="180" class="tentative" />
+                <line x1="140" y1="150" x2="160" y2="180" class="tentative" />
+            </svg>
+
+            <div id="motAtrouver"> <span class="lettre"></span>
+            </div><br>
+            <button class="newMot"> Vous pensez avoir trouvé le mot? Une seule chance </button> <br><br>
+
+        </div>
+
+        <div class="partieDroite">
+            <div class=" historique" id="historique">
+                <h3>Historique de toutes les lettres déjà utilisées</h3>
+                <!-- <strike>a</strike><br>
+                <strike>b</strike><br>
+                <strike>c</strike><br>
+                <strike>d</strike><br>
+                <strike>e</strike><br>
+                <strike>f</strike><br>
+                <strike>g</strike><br>
+                <strike>h</strike><br>
+                <strike>i</strike><br>
+                <strike>j</strike><br>
+                <strike>k</strike><br>
+                <strike>l</strike><br>
+                <strike>m</strike><br>
+                <strike>n</strike><br>
+                <strike>o</strike><br>
+                <strike>p</strike><br>
+                <strike>q</strike><br>
+                <strike>r</strike><br>
+                <strike>s</strike><br>
+                <strike>t</strike><br>
+                <strike>u</strike><br>
+                <strike>v</strike><br>
+                <strike>x</strike><br>
+                <strike>y</strike><br>
+                <strike>z</strike><br> -->
+            </div>
+        </div>
+        <!-- <p>Nombre d'essais restants: <span>11</span></p> -->
+    </section>
+
+
+    <div class="motTrouver" id="motTrouver">
+        <div class="popup">
+            <h4 id="messageBravo">Bravo, tu as trouvé le mot!!</h4>
+            <button class="newGame">Nouvelle partie </button>
+        </div>
+    </div>
+    <div class="contenant-motPerdu" id="contenant-motPerdu">
+        <div class="popup">
+            <h2 id="message-final">Tu n'as pas trouvé le mot, retente ta chance!</h2>
+        </div>
+    </div>
+
+    <!--Notification -->
+    <div class="notification" id="notification"> tu as déja saisie cette lettre</div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

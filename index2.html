@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENDU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Jeu du Pendu</h1>
+    <p>Trouve le mot caché - Entre une lettre à la fois</p>
+    <div class="jeu-contenant">
+        <svg height="300" width="400" class="figure-contenant">
+            <line x1="60" y1="230" x2="80" y2="230" class="tentative1" />
+            <line x1="60" y1="20" x2="60" y2="230" class="tentative2" />
+            <line x1="60" y1="20" x2="140" y2="20" class="tentative3" />
+            <line x1="140" y1="20" x2="140" y2="50" class="tentative4" />
+            <circle cx="140" cy="80" r="20" class="tentative"> </circle>
+            <line x1="140" y1="120" x2="140" y2="150" class="tentative" />
+            <line x1="140" y1="120" x2="120" y2="100" class="tentative" />
+            <line x1="140" y1="120" x2="160" y2="100" class="tentative" />
+            <line x1="140" y1="150" x2="120" y2="180" class="tentative" />
+            <line x1="140" y1="150" x2="160" y2="180" class="tentative" />
+        </svg>
+
+        <div class="mauvaises-lettre-contenant">
+            <p>Mauvaise lettres</p>
+            <div id="mauvaises-lettres"></div>
+        </div>
+        <div class="mot" id="mot"></div>
+
+    </div>
+
+    <!-- Contenant pour le message final -->
+    <div class="popup-contenant" id="popup-contenant">
+        <div class="popup">
+            <h2 id="message-final">Bravo, tu as gagné</h2>
+            <button id="play-bouton">Rejouer</button>
+        </div>
+    </div>
+
+        <!--Notification -->
+        <div class="notification-contenant" id="notification-contenant"> 
+            <p>tu as déja saisie cette lettre</p></div>
+
+    <script src="script/script3.js"></script>
+</body>
+
+</html>
