@@ -1,6 +1,10 @@
 /* styles géneraux */
 body{
-    background-color: #5966435f ;
+    /* background-color: #5966435f ; */
+    background-image: url(FOND.avif);   
+    background-repeat: no-repeat;
+    background-size: cover;
+  
     
 }
 section{
@@ -9,6 +13,12 @@ section{
 }
 
 h1{
+    display: flex;
+    justify-content: center;
+    
+    font-size: xx-large;
+}
+.regle {
     display: flex;
     justify-content: center;
 }
@@ -24,7 +34,7 @@ h1{
     float: center;
 }
 .figure-contenant{
-        stroke: purple;
+        stroke: rgb(63, 13, 13);
         stroke-width: 7px;
         stroke-linecap: round;
         fill: transparent;
@@ -100,15 +110,27 @@ transition: transform 0.3 ease-in-out;
 .figure-partie{
     display: none;
 }
-
-.mauvaises-lettre-contenant{
+.mauvaises{
+    display: flex;
+    justify-content: center ;
+    font-size: larger;
+    color: white;
+}
+.mauvaises-lettre-contenant {
+    border: 1px solid #ccc; /* Bordure pour simuler une carte */
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    background-color: #8e1c1c99; 
+    border-radius: 10px; 
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 5%;
     display: flex;
     flex-direction: column;
     text-align: right;
-}
+    width: 200px;
+    height: 100px;
+  }
 
 .mauvaises-lettre-contenant p{
     margin: 0 0 5px;

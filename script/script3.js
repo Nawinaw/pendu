@@ -7,11 +7,7 @@ const messageFinal = document.getElementById('message-final');
 
 const figurePartie = document.querySelectorAll('.tentative');
 
-const mots = [ "angle", "armoire", "banc", "bureau", "cabinet", "carreau", "chaise", "classe", "coin", "couloir", "dossier", "eau", "aller", 
-"amener", "apporter", "appuyer", "attendre", "bosser",  "dormir","absent", "assis", "haut", "crayon", "stylo", "feutre",  "trompette", "voix",
-"xylophone", "attention", "camarade","mensonge","madame","frite", "gobelet", "jambon", "poulet", "radis", "restaurant","aigle", "animaux", "aquarium",  
-"cerf", "chouette", "cigogne", "crocodile", "dauphin", "girafe", "hibou", "hippopotame", "kangourou", "lion", "loup", "ours", "panda", "panthère",
-"perroquet", "phoque", "renard", "requin", "singe", "tigre"];
+const mots = ['policier', 'ecriture', 'developper', 'poulet', 'bresil', 'japon', 'formation', 'architecture', 'princier', 'agence'];
 
 
 // Sélectionne un mot aléatoirement 
